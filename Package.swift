@@ -10,13 +10,9 @@ let package = Package(
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "NVActivityIndicatorView", targets: ["NVActivityIndicatorView"]),
-        .library(name: "NVActivityIndicatorViewExtended", targets: ["NVActivityIndicatorViewExtended"])
+        .library(name: "NVActivityIndicatorView", targets: ["NVActivityIndicatorView"])
     ],
     targets: [
-        .target(name: "NVActivityIndicatorView", path: "Sources/Base"),
-        .target(name: "NVActivityIndicatorViewExtended",
-                dependencies: ["NVActivityIndicatorView"],
-                path: "Sources/Extended")
+        .target(name: "NVActivityIndicatorView", path: "Sources")
     ]
 )
