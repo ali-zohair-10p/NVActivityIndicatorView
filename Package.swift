@@ -17,8 +17,8 @@ let package = Package(
             name: "NVActivityIndicatorView",
             path: "Sources",
             swiftSettings: [
-                .unsafeFlags(["-Xfrontend", "-disable-interface-verification"])
-            ]
+               .unsafeFlags(["-no-verify-emitted-module-interface"])
+        ]
         )
     ]
 )
