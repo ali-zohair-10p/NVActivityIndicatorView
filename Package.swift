@@ -13,6 +13,12 @@ let package = Package(
         .library(name: "NVActivityIndicatorView", targets: ["NVActivityIndicatorView"])
     ],
     targets: [
-        .target(name: "NVActivityIndicatorView", path: "Sources")
+        .target(
+            name: "NVActivityIndicatorView",
+            path: "Sources",
+            swiftSettings: [
+                .unsafeFlags(["-Xfrontend", "-disable-interface-verification"])
+            ]
+        )
     ]
 )
